@@ -39,7 +39,6 @@ body {
 }
 
 .heading {
-    /* font-size: 52px; */
     color: #3A3A3A;
 }
 
@@ -50,6 +49,11 @@ body {
     background-color: #E02C6D;
     font-size: 16px;
     border: none;
+    transition: 1s;
+}
+
+.btn:hover {
+    transform: scale(1.5) rotate(360deg);
 }
 
 .btn a {
@@ -133,6 +137,7 @@ hr {
 
 .see-more {
     text-align: right;
+    width: 1150px;
 }
 
 .see-more a {
@@ -143,6 +148,49 @@ hr {
 
 
 /* popular section end here */
+
+
+/* Login section start here  */
+
+.login-head {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1150px;
+    height: 380px;
+    /* margin-top: 50px; */
+    margin: 40px auto;
+}
+
+.sing-in-pic img {
+    border-radius: 10px;
+}
+
+.sing {
+    margin-left: 260px;
+    margin-top: 50px;
+}
+
+.e-border {
+    border: none;
+}
+
+.horizental {
+    width: 300px;
+    height: 4px;
+    background-color: #E02C6D;
+    radius: 1px;
+}
+
+.sing-btn {
+    color: white;
+    background-color: #E02C6D;
+    padding: 10px 100px;
+    border-radius: 30px;
+    border: none;
+}
+
+
+/* Login section start here */
 
 
 /* footer section start here  */
@@ -160,3 +208,8 @@ footer {
 
 
 /* footer section start here  */
+
+
+/*----------------------
+ mediya quari section 
+----------------------- */
