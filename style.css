@@ -12,8 +12,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.gaps-bot {
-    margin-bottom: 100px;
+.container {
+    width: 1100px;
+    margin: 0 auto;
 }
 
 
@@ -22,7 +23,6 @@ body {
 .influencer-head {
     color: #3A3A3A;
     font-size: 24px;
-    margin-left: 95px;
 }
 
 
@@ -31,11 +31,10 @@ body {
 
 /* Journer Section start here */
 
-.containar {
+.influencer-product {
     display: flex;
-    width: 1150px;
-    margin: 0 auto;
     margin-bottom: 100px;
+    align-items: center;
 }
 
 .heading {
@@ -65,11 +64,6 @@ body {
     margin-left: 10px;
 }
 
-.camera {
-    background-image: url(images/Circle\ design.svg);
-    background-repeat: no-repeat;
-}
-
 .camera img {
     width: 440px;
     height: 414px;
@@ -82,19 +76,14 @@ body {
 /* logo section start header */
 
 hr {
-    width: 1150px;
+    max-width: 1150px;
     height: 0px;
     color: rgba(128, 128, 128, 0.5);
 }
 
 .logo {
-    width: 1150px;
-    height: 40px;
-    margin: 0 auto;
-}
-
-.logo img {
-    margin-left: 40px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
@@ -107,9 +96,6 @@ hr {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    width: 1150px;
-    height: 1662px;
-    margin: 0 auto;
 }
 
 .popular-product {
@@ -137,7 +123,6 @@ hr {
 
 .see-more {
     text-align: right;
-    width: 1150px;
 }
 
 .see-more a {
@@ -153,12 +138,9 @@ hr {
 /* Login section start here  */
 
 .login-head {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 1150px;
-    height: 380px;
-    /* margin-top: 50px; */
-    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
 }
 
 .sing-in-pic img {
@@ -166,7 +148,6 @@ hr {
 }
 
 .sing {
-    margin-left: 260px;
     margin-top: 50px;
 }
 
@@ -178,7 +159,6 @@ hr {
     width: 300px;
     height: 4px;
     background-color: #E02C6D;
-    radius: 1px;
 }
 
 .sing-btn {
@@ -213,3 +193,49 @@ footer {
 /*----------------------
  mediya quari section 
 ----------------------- */
+
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 100%;
+    }
+    .influencer-product {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .camera>img {
+        width: 90%;
+    }
+    .logo {
+        flex-wrap: wrap;
+    }
+    .popular-containar {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .popular-product {
+        width: 300px;
+    }
+    .login-head {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* tab responsive */
+
+@media only screen and (min-width: 689px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+    .influencer-product {
+        justify-content: space-between;
+        margin: 0 20px;
+    }
+    .popular-containar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .see-more {
+        margin-right: 20px;
+    }
+}
